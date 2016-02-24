@@ -249,11 +249,11 @@
                 <!-- FOR CONTACT FORM MESSAGE -->
                 <div id="form-messages"></div>
 
-                <form id="contact-form">
-                  <input id="name" class="form-control" type="text" placeholder="Name" required>
-                  <input id="email" class="form-control" type="email" placeholder="Email" required>
-                  <textarea id="particulars" class="form-control" cols="30" rows="10" placeholder="Request Particulars"></textarea>
-                   <input class="submit_btn" type="button" value="Send" onclick="send()">
+                <form id="contact-form" method="post" action="/mail/lead">
+                  <input name="name" class="form-control" type="text" placeholder="Name" required>
+                  <input name="email" class="form-control" type="email" placeholder="Email" required>
+                  <textarea name="particulars" class="form-control" cols="30" rows="10" placeholder="Request Particulars"></textarea>
+                   <input class="submit_btn" type="submit" value="Send">
                 </form>
               </div>
             </div>
