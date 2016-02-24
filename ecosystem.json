@@ -2,15 +2,15 @@
 
     "apps": [
         {
-            "name": "boiler",
+            "name": "homestead",
             "script": "bin/www",
+            "node_args": "--harmony_destructuring",
             "instances": 4,
             "exec_mode"  : "cluster_mode",
             "error_file": "logs/pm2/err/err.log",
             "out_file": "logs/pm2/out/out.log",
             "out_file": "logs/pm2/out/out-env.log",
             "merge-logs": true,
-            "watch": true,
             "autorestart": true,
             "env_production": {
                 "NODE_ENV": "production"
